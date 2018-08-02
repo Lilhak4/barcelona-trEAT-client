@@ -1,5 +1,5 @@
-<h1>Login</h1>
 <form (ngSubmit)="submitForm(form)" #form="ngForm" novalidate [ngClass]="{'is-processing': processing}">
+  <h1>Login</h1>
 
   <div class="field" [ngClass]="{'has-error': feedbackEnabled && usernameField.errors}">
     <label>Username</label>
