@@ -10,8 +10,10 @@ import { AppComponent } from './app.component';
 import { LoginPageComponent } from './pages/login-page/login-page.component';
 import { SignupPageComponent } from './pages/signup-page/signup-page.component';
 import { NotfoundPageComponent } from './pages/notfound-page/notfound-page.component';
+import { IndexComponent } from './pages/index/index.component';
 
 const routes: Routes = [
+  { path: '', component: IndexComponent }
   { path: 'signup', component: SignupPageComponent },
   { path: 'login', component: LoginPageComponent }
 ];
@@ -20,7 +22,8 @@ const routes: Routes = [
     AppComponent,
     LoginPageComponent,
     SignupPageComponent,
-    NotfoundPageComponent
+    NotfoundPageComponent,
+    IndexComponent
   ],
   imports: [
     BrowserModule,
