@@ -27,18 +27,14 @@
   <nav>
     <div class="navigation">
       <a href="/" class="menuItem">Home</a>
-      <a href="#" class="menuItem">Profile</a>
+      <!-- <a href="#" class="menuItem">Profile</a> -->
       <hr>
       <a href="/signup" class="menuItem">Signup</a>
       <a href="/login" class="menuItem">Login</a>
+      <a (click)="logout()" class="menuItem">Logout</a>
     </div>
   </nav>
-  <div class="container">
-    nice header cabron
-  </div>
 </header>
-
-
 <div id="site-main" class="container">
   <router-outlet></router-outlet>
 </div>

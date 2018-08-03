@@ -79,7 +79,8 @@ p {
   /*blocks are aligned using flex*/
 	display: flex;
 	justify-content: center;
-	align-items: center;
+  align-items: center;
+  margin-bottom: 4vh;
 }
 
 .menuItem {
