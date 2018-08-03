@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from 'selenium-webdriver/http';
+import { HttpClientModule } from '@angular/common/http';
 // ---- Services ----
 import { AuthService } from './services/auth.service';
 // ---- Components ----
