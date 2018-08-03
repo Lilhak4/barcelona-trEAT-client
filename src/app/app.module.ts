@@ -3,8 +3,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { RequireAnonGuardService } from './guards/require-anon-guard.service';
-import { RequireUserGuardGuard } from './guards/require-user-guard.guard';
+import { RequireAnonGuardService } from './guards/require-anon.guard';
+import { RequireUserGuard } from './guards/require-user.guard';
 // ---- Services ----
 import { AuthService } from './services/auth.service';
 // ---- Components ----
@@ -36,7 +36,7 @@ const routes: Routes = [
   providers: [
     AuthService,
     RequireAnonGuardService,
-    RequireUserGuardGuard
+    RequireUserGuard
   ],
   bootstrap: [AppComponent]
 })
