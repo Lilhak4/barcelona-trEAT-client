@@ -3,6 +3,10 @@ form {
   text-align: center;
 }
 
+.field input {
+  border: rgba(0, 0, 0, 0.26) 0.25px solid;
+}
+
 /* -- forms -- */
 
 form.is-processing {
