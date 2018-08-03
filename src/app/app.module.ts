@@ -16,8 +16,8 @@ import { IndexComponent } from './pages/index/index.component';
 
 const routes: Routes = [
   { path: '', component: IndexComponent },
-  { path: 'signup', component: SignupPageComponent },
-  { path: 'login', component: LoginPageComponent }
+  { path: 'signup', component: SignupPageComponent, canActivate: [RequireAnonGuardService] },
+  { path: 'login', component: LoginPageComponent, canActivate: [RequireUserGuard] }
 ];
 @NgModule({
   declarations: [
