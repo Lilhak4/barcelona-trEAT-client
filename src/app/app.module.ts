@@ -19,6 +19,8 @@ const routes: Routes = [
   { path: 'signup', component: SignupPageComponent, canActivate: [RequireAnonGuardService] },
   { path: 'login', component: LoginPageComponent, canActivate: [RequireUserGuard] }
 ];
+
+
 @NgModule({
   declarations: [
     AppComponent,
