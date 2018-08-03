@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { RequireAnonGuardService } from './guards/require-anon-guard.service';
+import { RequireUserGuardGuard } from './guards/require-user-guard.guard';
 // ---- Services ----
 import { AuthService } from './services/auth.service';
 // ---- Components ----
@@ -31,7 +33,11 @@ const routes: Routes = [
     RouterModule.forRoot(routes),
     FormsModule
   ],
-  providers: [AuthService],
+  providers: [
+    AuthService,
+    RequireAnonGuardService,
+    RequireUserGuardGuard
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
