@@ -34,6 +34,8 @@ form .submit button {
   font-size: 16px;
   background-color: cyan;
   cursor: pointer;
+  border-radius: 30px;
+  border: rgb(207, 80, 30) 1px solid;
 }
 
 form .field.has-error label {

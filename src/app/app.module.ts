@@ -13,7 +13,7 @@ import { NotfoundPageComponent } from './pages/notfound-page/notfound-page.compo
 import { IndexComponent } from './pages/index/index.component';
 
 const routes: Routes = [
-  { path: '', component: IndexComponent }
+  { path: '', component: IndexComponent },
   { path: 'signup', component: SignupPageComponent },
   { path: 'login', component: LoginPageComponent }
 ];

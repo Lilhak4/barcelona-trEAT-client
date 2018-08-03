@@ -32,6 +32,12 @@ p {
   margin: 0;
 }
 
+#home-logo {
+  border-bottom: black 2px solid;
+  font-size: 2em;
+  color: black;
+}
+
 
 
 /* ---- layout ---- */
