@@ -45,6 +45,8 @@
   ### Backlog
 
   - /profile/:id
+  - /event/:id
+  - /
 
 ## Services
 
@@ -53,8 +55,6 @@
   - auth.signup(user)
   - auth.logout()
   - auth.me()
-- Profile Service
-  - profile.me()
 - Restaurants Service
   - restaurants.list()
   - restaurant.detail(id)   
@@ -67,7 +67,6 @@
 - Home Page
 - Restaurants List Page
 - Restaurant Detail Page
-- My Profile Page
 
 ## Components
 
@@ -77,13 +76,14 @@
 
 ## IO
 
-- Restaurants List Page inputs restaurante Restaurant Card component: Display all restaurants in a grid
+- Restaurants List Page inputs restaurant 
+- Restaurant Card component: Display all restaurants in a grid
 - Login/Sign up form outputs the form to the parent component
 
 ## Guards
 
 - if logged in cannot access login/signup page
-- if not logged in cannot access profile page
+- if not logged in cannot use search
 - if not logged in cannot access history page
 
 # Server
