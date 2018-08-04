@@ -1,37 +1,25 @@
 <header>
-  <!-- <nav role="navigation">
-    <div id="menuToggle">
-
-      <input type="checkbox" />
-
-      <span></span>
-      <span></span>
-      <span></span>
-
-      <ul id="menu">
-        <a href="/">
-          <li>Home</li>
-        </a>
-        <a href="/signup">
-          <li>Signup</li>
-        </a>
-        <a href="/login">
-          <li>Login</li>
-        </a>
-        <a href="#">
-          <li>Logout</li>
-        </a>
-      </ul>
-    </div>
-  </nav> -->
   <nav>
-    <div class="navigation">
-      <a href="/" class="menuItem" id="home-logo">trEATs</a>
-      <!-- <a href="#" class="menuItem">Profile</a> -->
-      <hr>
-      <a href="/signup" class="menuItem">Signup</a>
-      <a href="/login" class="menuItem">Login</a>
-      <a (click)="logout()" class="menuItem">Logout</a>
+    <div class="collapsible-menu">
+      <input type="checkbox" id="menu">
+      <label for="menu">trEATs</label>
+      <div class="menu-content">
+        <ul>
+          <li>
+            <a href="#"></a>Home</li>
+          <li>
+            <a href="#"></a>Profile</li>
+          <li>
+            <a href="#"></a>
+          </li>
+          <li>
+            <a href="#"></a>Signup</li>
+          <li>
+            <a href="#"></a>Login</li>
+          <li>
+            <a href="#"></a>Logout</li>
+        </ul>
+      </div>
     </div>
   </nav>
 </header>

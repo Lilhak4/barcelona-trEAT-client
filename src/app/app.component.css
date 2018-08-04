@@ -1,4 +1,4 @@
----- reset ----
+/*---- reset ----*/
 
 html {
   box-sizing: border-box;
@@ -15,96 +15,38 @@ body {
 
 /* ---- typography ---- */
 
-body {
-  color: #111;
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 147%;
+.menu-content {
+  max-height: 0;
+  overflow: hidden;
+  font-family: 'Oswald', sans-serif; 
+  padding: 0 0 0 50px;
 }
-
-/* h1 {}
-
-h2 {}
-
-h3 {} */
-
-p {
-  margin: 0;
+.collapsible-menu {
+  background-color: rgb(255, 255, 255);
+  padding: 0px 30px;
+  border-bottom: 3px solid #CDE700;
+  box-shadow: 1px 2px 3px rgba(0,0,0,0.2);
 }
-
-#home-logo {
-  border-bottom: black 2px solid;
-  font-size: 2em;
-  color: black;
+.collapsible-menu ul {
+  list-style-type: none;
+  padding: 0;
 }
-
-
-
-/* ---- layout ---- */
-
-#site-header {
-  padding: 30px 0;
-  color: white;
-  background: #111;
+.collapsible-menu a {
+  display:block;
+  padding: 10px;
+  text-decoration: none;
 }
-
-#site-footer {
-  color: white;
-  padding: 60px 0;
-  background: #111;
+.collapsible-menu label {
+    font-size: 56px;
+    display: block;
+    cursor: pointer;
+    background: url(../assets/images/menu.svg) no-repeat left center;
+    padding: 10px 0 10px 80px;
+    font-size: 1.75em;
 }
-
-#site-main {
-  /* margin-bottom: 60px; */
+input#menu {
+    display: none;
 }
-
-/* .container {
-  margin: 0 20px;
-} */
-
-.section {
-  margin-bottom: 20px;
-  padding-top: 20px;
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 728px;
-    margin: 0 auto;
-  }
-}
-
-/* -- navbar -- */
-
-.navigation {
-	background-color: #00bcd4;
-	padding: 10px 30px;
-	height: 70px;
-	border-bottom: 1px solid #008596;
-  
-  /*blocks are aligned using flex*/
-	display: flex;
-	justify-content: center;
-  align-items: center;
-  margin-bottom: 4vh;
-}
-
-.menuItem {
-	margin: 20px 15px;
-  /*Montserrat font by googlefonts*/
-	font-family: 'Montserrat', sans-serif;
-	color: white;
-	font-size: 18px;
-	text-decoration: none;
-}
-
-.menuItem:hover {
-	margin-bottom: 17px;
-	border-bottom: 3px solid white;
-  /*CCS3 element for hover effect*/
-	-webkit-transition: all .15s ease-in-out;
-  -moz-transition: all .15s ease-in-out;
-  -ms-transition: all .15s ease-in-out;
-  -o-transition: all .15s ease-in-out;
-  transition: all .15s ease-in-out;
+input:checked ~ .menu-content {
+  max-height: 100%;
 }
