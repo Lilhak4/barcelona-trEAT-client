@@ -1,15 +1,17 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
-
-body{
+/* ----Format ----*/
+/* body{
   background: #f2f2f2;
   font-family: 'Open Sans', sans-serif;
 }
 
 h2 {
   text-align: center;
-}
+} */
 
-.search {
+
+/*---- Searcbar ----*/
+/* .search {
   width: 100%;
   position: relative
 }
@@ -43,11 +45,24 @@ h2 {
   font-size: 20px;
 }
 
-/*Resize the wrap to see the search bar change!*/
 .wrap{
   width: 50%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+} */
+body {
+  
+}
+
+.container {
+  background-image: url("https://images.unsplash.com/photo-1493843007199-f4397137f7d9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=59a985209f936b2358830eb32d8d3669&auto=format&fit=crop&w=500&q=60");
+  height: 100vh;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+
 }
