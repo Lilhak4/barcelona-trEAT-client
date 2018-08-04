@@ -46,7 +46,6 @@
 
   - /profile/:id
   - /event/:id
-  - /
 
 ## Services
 
