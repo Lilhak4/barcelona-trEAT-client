@@ -17,7 +17,7 @@ form {
 }
 
 .form-container {
-  background-color: rgba(230,230,230,0.5);
+  background-color: rgba(230,230,230,0.75);
 }
 
 .form-container form {
@@ -57,7 +57,7 @@ form .submit button {
   font-size: 16px;
   background-color: rgba(255,255,255,0.4);
   cursor: pointer;
-  border: rgb(207, 80, 30) 1px solid;
+  border: rgb(176,92,28) 1px solid;
 }
 
 form .field.has-error label {

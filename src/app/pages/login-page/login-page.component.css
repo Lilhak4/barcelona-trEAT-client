@@ -7,6 +7,23 @@ form {
   border: rgba(0, 0, 0, 0.26) 0.25px solid;
 }
 
+.container {
+  background-image: url('https://images.unsplash.com/photo-1513321409245-5c6a71bd5242?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=1b38e2cf2fdc70148833d0ce0368e867&auto=format&fit=crop&w=500&q=60'); 
+  height: 89vh;
+  position: absolute;
+  width: 54vh;
+  background-size: cover;
+}
+
+.form-container {
+  background-color: rgba(230,230,230,0.75);
+}
+
+.form-container form {
+  margin-top: 15vh;
+  padding: 1vh;
+}
+
 /* -- navbar -- */
 
 
@@ -30,6 +47,7 @@ form label {
 form input {
   padding: 5px;
   font-size: 16px;
+  background-color: rgba(0,0,0, 0.1)
 }
 
 form .submit {
@@ -40,10 +58,9 @@ form .submit button {
   padding: 5px 20px;
   text-align: center;
   font-size: 16px;
-  background-color: cyan;
+  background-color: rgba(255,255,255,0.4);
   cursor: pointer;
-  border-radius: 30px;
-  border: rgb(207, 80, 30) 1px solid;
+  border: rgb(176,92,28) 1px solid;
 }
 
 form .field.has-error label {
