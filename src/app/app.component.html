@@ -5,23 +5,26 @@
       <label for="menu">trEAT</label>
       <div class="menu-content">
         <ul>
+          <li *ngIf="loading">
+            <span class="username text">loading...</span>
+          </li>
           <li>
             <a href="/">Home</a>
           </li>
-          <li>
+          <li *ngIf="!loading && !!user">
             <a href="#">Profile</a>
           </li>
-          <li></li>
-          <li>
+          <li *ngIf="!loading && anon">
             <a href="/signup">Signup</a>
           </li>
-          <li>
+          <li *ngIf="!loading && anon">
             <a href="/login">Login</a>
           </li>
-          <li>
-            <a href="#">Logout</a>
+          <li *ngIf="!loading && !!user">
+            <a (click)="logout()">logout</a>
           </li>
         </ul>
+
       </div>
     </div>
   </nav>

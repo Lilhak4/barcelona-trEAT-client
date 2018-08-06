@@ -14,12 +14,12 @@ import { SignupPageComponent } from './pages/signup-page/signup-page.component';
 import { NotfoundPageComponent } from './pages/notfound-page/notfound-page.component';
 import { IndexComponent } from './pages/index/index.component';
 import { RestaurantSearchComponent } from './restaurant-search/restaurant-search.component';
+import { InitAuthGuard } from './guards/init-auth.guard';
 
 const routes: Routes = [
-  { path: '', component: IndexComponent },
+  { path: '', component: IndexComponent, canActivate: [InitAuthGuard] },
   { path: 'signup', component: SignupPageComponent, canActivate: [RequireAnonGuardService] },
-  { path: 'login', component: LoginPageComponent, canActivate: [RequireUserGuard] },
-
+  { path: 'login', component: LoginPageComponent, canActivate: [RequireAnonGuardService] },
   { path: '**', component: NotfoundPageComponent }
 ];
 
@@ -42,7 +42,8 @@ const routes: Routes = [
   providers: [
     AuthService,
     RequireAnonGuardService,
-    RequireUserGuard
+    RequireUserGuard,
+    InitAuthGuard
   ],
   bootstrap: [AppComponent]
 })
