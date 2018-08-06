@@ -2,9 +2,12 @@
 
 
 .container {
-  background-image: url("https://images.unsplash.com/photo-1493843007199-f4397137f7d9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=59a985209f936b2358830eb32d8d3669&auto=format&fit=crop&w=500&q=60");
-  height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1504855101244-34edfbd4b861?ixlib=rb-0.3.5…jEyMDd9&s=dfbd225…&auto=format&fit=crop&w=500&q=60");
+  height: 91vh;
   background-repeat: no-repeat;
+  position: absolute;
+  width: 96vw;
+  background-position: left;
 }
 
 .search {
@@ -15,13 +18,19 @@
 
 .search-form {
   width:80vw;
-  margin:50px auto;
+  margin-top: 50vh;
+  margin-left: 10vw;
 }
 
 .search-bar {
   padding:8px 15px;
-  background:rgba(50, 50, 50, 0.2);
+  background:rgb(45,23,7, 0.75);
   border:0px solid #dbdbdb;
+  color: white
+}
+
+.search-bar::placeholder {
+  color: white
 }
 
 .search-button {
@@ -29,6 +38,6 @@
   padding:6px 15px;
   left:-8px;
   border:2px solid #207cca;
-  background-color:#207cca;
+  background-color:rgb(45,23,7);
   color:#fafafa;
 }
