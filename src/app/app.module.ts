@@ -13,11 +13,14 @@ import { LoginPageComponent } from './pages/login-page/login-page.component';
 import { SignupPageComponent } from './pages/signup-page/signup-page.component';
 import { NotfoundPageComponent } from './pages/notfound-page/notfound-page.component';
 import { IndexComponent } from './pages/index/index.component';
+import { RestaurantSearchComponent } from './restaurant-search/restaurant-search.component';
 
 const routes: Routes = [
   { path: '', component: IndexComponent },
   { path: 'signup', component: SignupPageComponent, canActivate: [RequireAnonGuardService] },
-  { path: 'login', component: LoginPageComponent, canActivate: [RequireUserGuard] }
+  { path: 'login', component: LoginPageComponent, canActivate: [RequireUserGuard] },
+
+  { path: '**', component: NotfoundPageComponent }
 ];
 
 
@@ -27,7 +30,8 @@ const routes: Routes = [
     LoginPageComponent,
     SignupPageComponent,
     NotfoundPageComponent,
-    IndexComponent
+    IndexComponent,
+    RestaurantSearchComponent
   ],
   imports: [
     BrowserModule,
