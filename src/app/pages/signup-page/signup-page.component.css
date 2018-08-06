@@ -20,6 +20,11 @@ form {
   background-color: rgba(230,230,230,0.5);
 }
 
+.form-container form {
+  margin-top: 15vh;
+  padding: 1vh;
+}
+
 /* -- forms -- */
 
 form.is-processing {
