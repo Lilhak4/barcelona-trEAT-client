@@ -31,10 +31,3 @@ export class LoginPageComponent implements OnInit {
         );
       // ... maybe turn this to false if your're staying on the page - this.processing = false;
     }
-//         .catch ((err) => {
-//       this.error = err.error.error; // :-)
-//       this.processing = false;
-//       this.feedbackEnabled = false;
-//     });
-//   }
-// }
