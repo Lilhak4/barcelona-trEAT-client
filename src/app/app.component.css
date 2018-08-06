@@ -37,6 +37,7 @@ body {
   display:block;
   padding: 10px;
   text-decoration: none;
+  color: white;
 }
 .collapsible-menu label {
     font-size: 56px;
@@ -46,6 +47,9 @@ body {
     padding: 10px 0 10px 40%;
     font-size: 2.5em;
 }
+/* .collapsible-menu img {
+  
+} */
 input#menu {
     display: none;
 }
