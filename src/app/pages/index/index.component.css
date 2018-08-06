@@ -19,11 +19,11 @@
 .search-form {
   width:80vw;
   margin-top: 49vh;
-  margin-left: 11vw;
+  margin-left: 6vw;
 }
 
 .search-bar {
-  padding:8px 15px;
+  padding: 14px 23px;
   background:rgb(45,23,7, 0.75);
   border:0px solid #dbdbdb;
   color: white
@@ -35,7 +35,7 @@
 
 .search-button {
   position:relative;
-  padding:6px 15px;
+  padding: 12px 15px;
   border:2px solid rgb(132,69,21);
   background-color:rgb(45,23,7);
   color:#fafafa;
