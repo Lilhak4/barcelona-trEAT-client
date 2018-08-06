@@ -35,10 +35,8 @@
     <div *ngIf="error" class="validation">
       <div [ngSwitch]="error.code">
         <p *ngSwitchCase="'username-not-unique'">Username is already taken</p>
-        <p *ngSwitchDefault>An unexpexted error occurred, please try again</p>
+        <p *ngSwitchDefault>An unexpected error occurred, please try again</p>
       </div>
     </div>
   </div>
-
-  <!-- <a [routerLink]="['/login']">If you already have an account, login here</a> -->
 </form>
