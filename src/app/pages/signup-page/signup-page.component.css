@@ -1,10 +1,23 @@
 /* -- body -- */
 form {
   text-align: center;
+  margin-top: 20vh;
+
 }
 
 .field input {
   border: rgba(0, 0, 0, 0.26) 0.25px solid;
+}
+
+.container {
+  background-image: url(https://images.unsplash.com/photo-1519518892892-85f4ba0b2e2d?ixlib=rb-0.3.5…jEyMDd9&s=5f8be0b…&auto=format&fit=crop&w=500&q=60);
+  height: 90vh;
+  position: absolute;
+  width: 54vh;
+}
+
+.form-container {
+  background-color: rgba(230,230,230,0.5);
 }
 
 /* -- forms -- */
@@ -26,6 +39,7 @@ form label {
 form input {
   padding: 5px;
   font-size: 16px;
+  background-color: rgba(0,0,0, 0.1)
 }
 
 form .submit {
@@ -36,9 +50,8 @@ form .submit button {
   padding: 5px 20px;
   text-align: center;
   font-size: 16px;
-  background-color: cyan;
+  background-color: rgba(255,255,255,0.4);
   cursor: pointer;
-  border-radius: 30px;
   border: rgb(207, 80, 30) 1px solid;
 }
 
