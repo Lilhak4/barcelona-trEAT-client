@@ -29,14 +29,27 @@
 .search-form {
   width:80vw;
   margin-top: 10vh;
-  margin-left: 11vw;
+  margin-left: 19vw;
+}
+
+.search-location-bar {
+    padding: 14px 23px;
+    background:rgb(45,23,7, 0.75);
+    border:0px solid #dbdbdb;
+    color: white;
+}
+
+.search-location-bar::placeholder {
+  color: rgb(222, 224, 226);
 }
 
 .search-bar {
   padding: 14px 23px;
   background:rgb(45,23,7, 0.75);
   border:0px solid #dbdbdb;
-  color: white
+  color: white;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
 }
 
 .search-bar::placeholder {
@@ -49,6 +62,8 @@
   border:2px solid rgb(132,69,21);
   background-color:rgb(45,23,7);
   color:#fafafa;
+  display: block;
+  margin-left: 19vw;
 }
 
 .card-container img {

@@ -43,9 +43,19 @@ body {
     font-size: 56px;
     display: block;
     cursor: pointer;
-    background: url(../assets/images/menu.svg) no-repeat left center;
+    /* background: url(../assets/images/menu.svg) no-repeat left center; */
     padding: 10px 0 10px 40%;
     font-size: 2.5em;
+}
+
+.collapsible-menu label img {
+  font-size: 1.5em;
+  width: 4vh;
+  margin-left: -38vw;
+}
+
+.title {
+  margin-left: 27vw;
 }
 /* .collapsible-menu img {
   
