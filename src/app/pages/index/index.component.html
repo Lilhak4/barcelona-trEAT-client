@@ -1,18 +1,21 @@
 <div class="container">
   <form class="search-form">
-    <input class="search-bar" type="text" placeholder="Treat Yourself" required>
-    <button class="search-button" value="Search">Search</button>
+    <input class="search-bar" type="text" placeholder="Treat Yourself" required #searchInput>
+    <button (click)="handleSearch(searchInput.value)" class="search-button" type="submit">Search</button>
   </form>
 
-  <!-- <div class="card-container">
+
+  <div *ngIf="restaurants" class="card-container">
     <div class="card">
       <div class="card-title">
-        <ul *ngFor="let restaurant of restaurants ">
-          <li>{{restaurant.image_url}}</li>
-          <li>{{restaurant.name}}</li>
-          <li>{{restaurant.price}}</li>
-          <li>{{restaurant.rating}}</li>
+        <ul>
+          <li *ngFor="let restaurant of restaurants ">
+            <p>{{restaurant.image_url}}</p>
+            <p>{{restaurant.name}}</p>
+            <p>{{restaurant.price}}</p>
+            <p>{{restaurant.rating}}</p>
+          </li>
         </ul>
       </div>
     </div>
-  </div> -->
+  </div>

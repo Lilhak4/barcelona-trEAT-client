@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+// ----Services----
+import { SearchRestaurantsService } from '../../services/search-restaurants.service';
 
 
 @Component({
@@ -8,10 +10,21 @@ import { Router } from '@angular/router';
   styleUrls: ['./index.component.css']
 })
 export class IndexComponent implements OnInit {
+  restaurants: any;
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private searchRestaurants: SearchRestaurantsService) { }
 
   ngOnInit() {
+  }
+
+  handleSearch(data) {
+    this.searchRestaurants.getAll(data)
+      .then((results: any) => {
+        this.restaurants = results.jsonBody.businesses;
+        console.log(results);
+      })
+      .catch();
+
   }
 
 }
