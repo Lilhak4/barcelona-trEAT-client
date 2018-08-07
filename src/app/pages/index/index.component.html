@@ -1,22 +1,18 @@
 <div class="container">
   <form class="search-form">
     <input class="search-bar" type="text" placeholder="Treat Yourself" required>
-    <button class="search-button" value="Search">Search</button>
+    <button (click)="searchRestaurant" class="search-button" value="Search">Search</button>
   </form>
 
   <div class="card-container">
     <div class="card">
       <div class="card-title">
-        <ul>
-          <!-- <li *ngFor="let "></li> -->
+        <ul *ngFor="let restaurant of restaurants ">
+          <li [(ngModel)]="restaurant.image_url"></li>
+          <li [(ngModel)]="restaurant.name"></li>
+          <li [(ngModel)]="restaurant.rating"></li>
+          <li [(ngModel)]="restaurant.address1"></li>
         </ul>
-        <div class="card-body">
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-        </div>
       </div>
     </div>
   </div>

@@ -10,8 +10,14 @@
   background-position: left;
 }
 
+/*  ----- Components ----- */
 .card li {
   list-style-type: none;
+}
+
+.card-container {
+  height: 30vh;
+  background: rgba(200,244,230,0.8);
 }
 
 .search {
