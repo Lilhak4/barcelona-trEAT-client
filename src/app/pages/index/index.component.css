@@ -10,6 +10,10 @@
   background-position: left;
 }
 
+.card li {
+  list-style-type: none;
+}
+
 .search {
   display: flex;
   justify-content: center;
