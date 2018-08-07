@@ -93,7 +93,6 @@
 
   ```
   username - String // required
-  email - String // required & unique
   password - // required
   ```
 
@@ -104,7 +103,6 @@
   - GET /auth/me
   - POST /auth/signup
   - POST /auth/login
-  - POST /auth/me
   - GET /profile/me
-  - GET /restaurante
+  - GET /restaurant
   - GET /restaurant/:id
