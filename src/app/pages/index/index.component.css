@@ -16,7 +16,6 @@
 }
 
 .card-container {
-  height: 68vh;
   background: rgba(200,244,230,0.8);
 }
 
@@ -49,4 +48,10 @@
   border:2px solid rgb(132,69,21);
   background-color:rgb(45,23,7);
   color:#fafafa;
+}
+
+.card-container img {
+  width: 75%;
+  margin-top: 0vh;
+  
 }

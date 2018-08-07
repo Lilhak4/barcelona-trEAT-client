@@ -7,16 +7,18 @@
 
   <div *ngIf="restaurants" class="card-container">
     <div class="card">
-      <div class="card-title">
-        <ul>
-          <li *ngFor="let restaurant of restaurants ">
-            <p>{{restaurant.image_url}}</p>
-            <p>{{restaurant.name}}</p>
-            <p>{{restaurant.price}}</p>
-            <p>{{restaurant.rating}}</p>
-            <p>{{restaurant.location.address1}}</p>
-          </li>
-        </ul>
-      </div>
+      <ul>
+        <li *ngFor="let restaurant of restaurants ">
+          <img src="{{restaurant.image_url}}" alt="">
+          <p>
+            <b>Name:</b> {{restaurant.name}}</p>
+          <p>
+            <b>Address:</b> {{restaurant.location.address1}}</p>
+          <p>
+            <b>Price:</b> {{restaurant.price}}</p>
+          <p>
+            <b>Rating (0-5):</b> {{restaurant.rating}}</p>
+        </li>
+      </ul>
     </div>
   </div>
