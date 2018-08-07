@@ -1,6 +1,6 @@
 .container {
   background-image: url("https://images.unsplash.com/photo-1532598065077-cf9ee59bf91f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d24b97762e23d366423381c777c56ff7&auto=format&fit=crop&w=500&q=60");
-  height: 100vh;
+  height: 91vh;
 }
 
 .error-message {
@@ -8,7 +8,8 @@
   padding: 15vh;
   position: absolute;
   margin-top: 10vh;
-  width: 24vh;
+  width: 56vh;
+  text-align: center;
 }
 
 .number {
