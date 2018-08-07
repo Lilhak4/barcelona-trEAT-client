@@ -13,7 +13,6 @@ import { LoginPageComponent } from './pages/login-page/login-page.component';
 import { SignupPageComponent } from './pages/signup-page/signup-page.component';
 import { NotfoundPageComponent } from './pages/notfound-page/notfound-page.component';
 import { IndexComponent } from './pages/index/index.component';
-import { RestaurantSearchComponent } from './restaurant-search/restaurant-search.component';
 import { InitAuthGuard } from './guards/init-auth.guard';
 import { SearchResultsComponent } from './pages/search-results/search-results.component';
 
@@ -33,7 +32,6 @@ const routes: Routes = [
     SignupPageComponent,
     NotfoundPageComponent,
     IndexComponent,
-    RestaurantSearchComponent,
     SearchResultsComponent
   ],
   imports: [
