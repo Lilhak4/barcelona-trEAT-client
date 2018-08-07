@@ -1,4 +1,4 @@
-<div class="container">
+<!-- <div class="container">
   <form class="search-form">
     <input class="search-bar" type="text" placeholder="Treat Yourself" required>
     <button (click)="searchRestaurant" class="search-button" value="Search">Search</button>
@@ -8,11 +8,11 @@
     <div class="card">
       <div class="card-title">
         <ul *ngFor="let restaurant of restaurants ">
-          <li [(ngModel)]="restaurant.image_url"></li>
-          <li [(ngModel)]="restaurant.name"></li>
-          <li [(ngModel)]="restaurant.rating"></li>
-          <li [(ngModel)]="restaurant.address1"></li>
+          <li>{{restaurant.image_url}}</li>
+          <li>{{restaurant.name}}</li>
+          <li>{{restaurant.price}}</li>
+          <li>{{restaurant.rating}}</li>
         </ul>
       </div>
     </div>
-  </div>
+  </div> -->
