@@ -17,6 +17,7 @@
 
 .card-container {
   background: rgba(188,143,143,0.8);
+  height: fit-content;
 }
 
 .search {
@@ -58,4 +59,8 @@
 
 .card-container li  {
   margin-left: 7vw;
+}
+
+hr {
+  margin-left: -18vw;
 }
