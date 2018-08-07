@@ -16,7 +16,7 @@
 }
 
 .card-container {
-  background: rgba(200,244,230,0.8);
+  background: rgba(188,143,143,0.8);
 }
 
 .search {
@@ -51,7 +51,11 @@
 }
 
 .card-container img {
-  width: 75%;
-  margin-top: 0vh;
+  width: 80%;
+  margin-top: 5vh;
   
+}
+
+.card-container li  {
+  margin-left: 7vw;
 }
