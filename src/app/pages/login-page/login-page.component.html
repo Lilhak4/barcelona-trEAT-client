@@ -21,7 +21,7 @@
 
       <div class="field" [ngClass]="{'has-error': feedbackEnabled && passwordField.errors}">
         <label>Password</label>
-        <input type="text" name="password" [(ngModel)]="password" #passwordField="ngModel" required minlength="6" [disabled]="processing"
+        <input type="password" name="password" [(ngModel)]="password" #passwordField="ngModel" required minlength="6" [disabled]="processing"
         />
         <div *ngIf="feedbackEnabled && passwordField.errors">
           <p *ngIf="passwordField.errors.required" class="validation">password required</p>
