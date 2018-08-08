@@ -1,0 +1,25 @@
+.container {
+  height: 91vh;
+  background-color: aquamarine;
+  margin-top: 0vh;
+  background-image: url(https://images.unsplash.com/photo-1504050502639-3d3c3f6266cd?ixlib=rb-0.3.5…jEyMDd9&s=1811936…&auto=format&fit=crop&w=634&q=80);
+  background-size: cover;
+}
+
+
+.profile-container {
+  background-color: rgba(230,230,230,0.4);
+  padding: 36%;
+  height: 63vh;
+  margin-top: 18%;
+  position: absolute;
+  width: 100%;
+}
+
+.profile-container h1 {
+  margin-top: 0vh;
+}
+/* 
+.fav-list {
+
+} */
