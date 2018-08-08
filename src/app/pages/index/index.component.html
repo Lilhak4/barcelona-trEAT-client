@@ -10,7 +10,7 @@
     <div class="card">
       <ul>
         <li *ngFor="let restaurant of restaurants ">
-          <img src="{{restaurant.image_url}}" alt="">
+          <img src="{{restaurant.image_url}}" alt="{{restaurant.alias}}">
           <p>
             <b>Name:</b> {{restaurant.name}}</p>
           <p>
