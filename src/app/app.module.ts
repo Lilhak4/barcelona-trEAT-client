@@ -32,7 +32,8 @@ const routes: Routes = [
     SignupPageComponent,
     NotfoundPageComponent,
     IndexComponent,
-    SearchResultsComponent
+    SearchResultsComponent,
+
   ],
   imports: [
     BrowserModule,
