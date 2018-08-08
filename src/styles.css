@@ -11,6 +11,14 @@ body {
   padding: 0;
 }
 
+body > .inner {
+  display: none;
+}
+
+body.pg-loaded > .inner {
+  display: block;
+}
+
 .loading {
   color: rgb(182, 57, 43);
   text-transform: uppercase;
@@ -30,3 +38,4 @@ body {
   height: 100vh;
 
 }
+

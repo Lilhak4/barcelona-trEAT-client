@@ -3,12 +3,36 @@
 
 .container {
   background-image: url("https://images.unsplash.com/photo-1504855101244-34edfbd4b861?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=dfbd2254afa6708e5721c7865124d64b&auto=format&fit=crop&w=500&q=60");
-  height: 90vh;
+  height: 83vh;
   background-repeat: no-repeat;
   position: absolute;
   width: 100vw;
   background-position: left;
 }
+
+.container-form {
+  height: 70.9vh;
+}
+
+.container-two {
+  background: rgb(204, 164, 129);
+  height: 35vh;
+}
+
+.container-three-picture img {
+  max-width: 100%;
+}
+
+.container-four {
+  height: 35vh;
+  background-color: #000000;
+  color: #e1c5ac;
+}
+
+.container-four p {
+  margin-top: -0.6vh;
+}
+
 
 /*  ----- Components ----- */
 .card li {
@@ -99,4 +123,9 @@
 
 hr {
   margin-left: -18vw;
+}
+
+.footer {
+  height: 12vh;
+  background-color: white;
 }

@@ -1,15 +1,39 @@
 <div class="container">
-  <form class="search-form">
-    <input class="search-location-bar" type="text" placeholder="Location" required #searchLocationInput>
-    <input class="search-bar" type="text" placeholder="Dessert" required #searchInput>
-    <button (click)="handleSearch(searchInput.value, searchLocationInput.value)" class="search-button" type="submit">Search</button>
-  </form>
+  <div *ngIf="!restaurants" class="container-form">
+    <form class="search-form">
+      <input class="search-location-bar" type="text" placeholder="Location" required #searchLocationInput>
+      <input class="search-bar" type="text" placeholder="Dessert" required #searchInput>
+      <button (click)="handleSearch(searchInput.value, searchLocationInput.value)" class="search-button" type="submit">Search</button>
+    </form>
+  </div>
 
   <div *ngIf="loading" class="loading-container">
     <div>
       <i>Treat Yourself</i>
     </div>
   </div>
+
+  <div *ngIf="!restaurants" class="container-two">
+    <div class="container-two-text">
+      <p>asdfknj</p>
+    </div>
+  </div>
+
+  <div *ngIf="!restaurants" class="container-three-picture">
+    <img src="https://images.unsplash.com/photo-1517417196127-9ad11f8a8dd3?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7facb17970400506aa1924001f3efe55&auto=format&fit=crop&w=1050&q=80">
+  </div>
+
+  <div *ngIf="!restaurants" class="container-four">
+    <div class="container-two-text">
+      <p>asdfknj</p>
+    </div>
+  </div>
+
+  <footer>
+    <div *ngIf="!restaurants" class="footer">
+
+    </div>
+  </footer>
 
 
   <div *ngIf="restaurants" class="card-container">
