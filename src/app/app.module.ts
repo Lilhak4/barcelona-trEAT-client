@@ -14,13 +14,13 @@ import { SignupPageComponent } from './pages/signup-page/signup-page.component';
 import { NotfoundPageComponent } from './pages/notfound-page/notfound-page.component';
 import { IndexComponent } from './pages/index/index.component';
 import { InitAuthGuard } from './guards/init-auth.guard';
-import { SearchResultsComponent } from './pages/search-results/search-results.component';
+import { ProfileComponent } from './pages/profile/profile.component';
 
 const routes: Routes = [
   { path: '', component: IndexComponent, canActivate: [InitAuthGuard] },
   { path: 'signup', component: SignupPageComponent, canActivate: [RequireAnonGuardService] },
   { path: 'login', component: LoginPageComponent, canActivate: [RequireAnonGuardService] },
-  { path: 'search-results', component: SearchResultsComponent, canActivate: [RequireUserGuard] },
+  { path: 'profile', component: ProfileComponent, canActivate: [RequireUserGuard] },
   { path: '**', component: NotfoundPageComponent }
 ];
 
@@ -32,7 +32,7 @@ const routes: Routes = [
     SignupPageComponent,
     NotfoundPageComponent,
     IndexComponent,
-    SearchResultsComponent,
+    ProfileComponent,
 
   ],
   imports: [

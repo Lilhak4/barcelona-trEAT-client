@@ -3,7 +3,6 @@ import { HttpClient, HttpResponse } from '@angular/common/http';
 import { Subject, Observable } from 'rxjs';
 import { environment } from '../../environments/environment';
 
-// import { environment } from '../../environments/environment';
 
 @Injectable()
 export class AuthService {
