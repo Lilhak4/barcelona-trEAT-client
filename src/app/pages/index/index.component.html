@@ -1,9 +1,15 @@
 <div class="container">
   <form class="search-form">
-    <input class="search-location-bar" type="text" placeholder="Location" required #searchInput>
+    <input class="search-location-bar" type="text" placeholder="Location" required #searchLocationInput>
     <input class="search-bar" type="text" placeholder="Dessert" required #searchInput>
-    <button (click)="handleSearch(searchInput.value)" class="search-button" type="submit">Search</button>
+    <button (click)="handleSearch(searchInput.value, searchLocationInput.value)" class="search-button" type="submit">Search</button>
   </form>
+
+  <div *ngIf="loading" class="loading-container">
+    <div>
+      <i>Treat Yourself</i>
+    </div>
+  </div>
 
 
   <div *ngIf="restaurants" class="card-container">

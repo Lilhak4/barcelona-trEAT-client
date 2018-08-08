@@ -18,12 +18,12 @@ export class SearchRestaurantsService {
   constructor(private httpClient: HttpClient) { }
 
 
-  getAll(data) {
+  getAll(data, location) {
     const options = {
       withCredentials: true
     };
 
-    return this.httpClient.get(`${this.API_URL}?query=${data}`, options)
+    return this.httpClient.get(`${this.API_URL}?dessert=${data}&location=${location}`, options)
       .toPromise();
   }
 
