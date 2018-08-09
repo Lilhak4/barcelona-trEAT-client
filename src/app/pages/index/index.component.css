@@ -15,12 +15,24 @@
 }
 
 .container-two {
-  background: rgb(204, 164, 129);
-  height: 35vh;
+  background: rgb(255, 199, 147);
+  height: 45vh;
+}
+.container-two-text {
+  padding-top: 4vh;
+}
+
+.container-two-text h1 {
+  margin-top: 2vh;
+}
+
+.container-two-picture img {
+  width: 50%;
+  margin-left: 20vw;
 }
 
 .container-three-picture img {
-  max-width: 100%;
+  width: 100%;
 }
 
 .container-four {
