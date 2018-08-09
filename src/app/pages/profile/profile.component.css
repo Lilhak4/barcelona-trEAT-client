@@ -8,16 +8,20 @@
 
 
 .profile-container {
-  background-color: rgba(229,171,128,0.4);
-  padding: 36%;
+  background-color: rgba(229,171,128,0.85);
   height: 63vh;
   margin-top: 18%;
   position: absolute;
   width: 100%;
+  text-align: center;
 }
 
 .profile-container h1 {
-  margin-top: 0vh;
+  margin-top: 5vh;
+}
+
+.profile-container li {
+  font-size: 1.2em;
 }
 
 .fav-list {

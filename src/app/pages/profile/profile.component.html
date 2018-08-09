@@ -3,8 +3,7 @@
     <h1>Hello, {{user.username}}! </h1>
     <h2>Favorites</h2>
     <ul class="fav-list">
-      <li>{{user.favorites}}</li>
-      <li>{{restaurant.name}}</li>
+      <li *ngFor="let favorite of user.favorites">{{favorite}}</li>
     </ul>
   </div>
 </div>

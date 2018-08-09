@@ -22,7 +22,7 @@ body {
   padding: 0 0 0 50px;
 }
 .collapsible-menu {
-  background-color: white;
+  background-color: rgb(229,171,128);
   padding: 0px 30px;
   border-bottom: 0.7px solid rgba(0, 0, 0, 0.7);
   box-shadow: 1px 2px 3px rgba(0,0,0,0.2);
