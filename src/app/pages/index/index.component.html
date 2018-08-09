@@ -27,14 +27,17 @@
   </div>
 
   <div *ngIf="!restaurants" class="container-four">
-    <div class="container-two-text">
+    <div class="container-four-picture">
+      <img src="https://cdn3.iconfinder.com/data/icons/birthday-celebration/60/piece_cake_birthday_party_food_dessert_cherry-512.png">
+    </div>
+    <div class="container-four-text">
       <h2>"I needed a tres leches fix fast, and the trEAT app helped my withdrawal!"</h2>
     </div>
   </div>
 
   <footer>
     <div *ngIf="!restaurants" class="footer">
-
+      <h4>Yours Truly, Kahlil Gersbach</h4>
     </div>
   </footer>
 
@@ -52,6 +55,7 @@
             <b>Price:</b> {{restaurant.price}}</p>
           <p>
             <b>Rating (0-5):</b> {{restaurant.rating}}</p>
+          <a (click)="handleFavoriteClick(restaurant.name)">favorites</a>
           <hr>
         </li>
       </ul>

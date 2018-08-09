@@ -70,4 +70,13 @@ export class AuthService {
   getUser(): any {
     return this.user;
   }
+
+  addFavorite(name: string): Promise<any> {
+    const options = {
+      withCredentials: true
+    };
+    return this.httpClient.post(`${this.API_URL}/addFavorite`, { name }, options)
+      .toPromise()
+      .then((data) => this.setUser(data));
+  }
 }

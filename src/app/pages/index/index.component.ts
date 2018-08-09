@@ -40,4 +40,9 @@ export class IndexComponent implements OnInit {
 
   }
 
+  handleFavoriteClick(name) {
+    this.authService.addFavorite(name);
+
+  }
+
 }
