@@ -77,6 +77,8 @@ export class AuthService {
     };
     return this.httpClient.post(`${this.API_URL}/addFavorite`, { name }, options)
       .toPromise()
-      .then((data) => this.setUser(data));
+      .then((data) => {
+        this.setUser(data);
+      });
   }
 }

@@ -18,6 +18,7 @@
   background-color:rgb(229,171,128);
   height: 45vh;
   /* border-bottom: 0.5px solid white; */
+  text-align: center;
 }
 .container-two-text {
   padding-top: 4vh;
@@ -29,7 +30,6 @@
 
 .container-two-picture img {
   width: 50%;
-  margin-left: 20vw;
 }
 
 .container-three-picture img {
@@ -43,20 +43,26 @@
   background-color: #000000;
   color: #e1c5ac;
   margin-top: -4vh;
+  text-align: center;
 }
 
 .container-four-picture img {
   width: 50%;
   margin-left: 20vw;
+  height: 25vh;
 }
 
 .footer {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
   height: 10vh;
   background-color: rgb(229,171,128);
-  padding: 1vh;
+  padding: 2vh;
   border-top: 0.5px solid white;
-  text-align: center;
 }
+
+
 
 
 
