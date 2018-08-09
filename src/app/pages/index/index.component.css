@@ -39,7 +39,7 @@
 }
 
 .container-four {
-  height: 50vh;
+  height: 55vh;
   background-color: #000000;
   color: #e1c5ac;
   margin-top: -4vh;
@@ -48,8 +48,8 @@
 
 .container-four-picture img {
   width: 50%;
-  margin-left: 20vw;
   height: 25vh;
+  margin-top: 8vh;
 }
 
 .container-four-text h2 {
