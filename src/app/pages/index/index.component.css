@@ -54,6 +54,8 @@
   height: 10vh;
   background-color: rgb(229,171,128);
   padding: 1vh;
+  border-top: 0.5px solid white;
+  text-align: center;
 }
 
 
