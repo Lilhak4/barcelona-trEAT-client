@@ -31,7 +31,6 @@ export class SignupPageComponent implements OnInit {
       this.authService.signup(user)
         .then((result) => {
           this.router.navigate(['/login']);
-          // ... navigate with this.router.navigate(['...'])
           // ... maybe turn this to false if your're staying on the page - this.processing = false;
         })
         .catch((err) => {

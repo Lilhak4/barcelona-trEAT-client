@@ -31,5 +31,3 @@ export class LoginPageComponent implements OnInit {
     }
   }
 }
-      // change the above to profile after I make it
-    // ... maybe turn this to false if your're staying on the page - this.processing = false;
