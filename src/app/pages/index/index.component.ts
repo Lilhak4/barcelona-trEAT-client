@@ -29,7 +29,6 @@ export class IndexComponent implements OnInit {
       this.searchRestaurants.getAll(data, location)
         .then((results: any) => {
           this.restaurants = results.jsonBody.businesses;
-          console.log(results);
           this.loading = false;
         })
         .catch();
