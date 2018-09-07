@@ -3,7 +3,7 @@
 
 .container {
   background-image: url("https://images.unsplash.com/photo-1504855101244-34edfbd4b861?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=dfbd2254afa6708e5721c7865124d64b&auto=format&fit=crop&w=500&q=60");
-  height: 83vh;
+  height: 81vh;
   background-repeat: no-repeat;
   position: absolute;
   width: 100vw;
@@ -42,7 +42,7 @@
   height: 55vh;
   background-color: #000000;
   color: #e1c5ac;
-  margin-top: -4vh;
+  margin-top: -0.7vh;
   text-align: center;
 }
 
