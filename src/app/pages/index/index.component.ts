@@ -35,13 +35,14 @@ export class IndexComponent implements OnInit {
     } else {
       this.router.navigate(['/login']);
     }
-
-
   }
 
   handleFavoriteClick(name) {
     this.authService.addFavorite(name);
-
   }
+
+  // goToPage(profile: string) {
+  //   this.router.navigate([`${profile}`]);
+  // }
 
 }
