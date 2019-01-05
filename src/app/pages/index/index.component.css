@@ -60,7 +60,7 @@
 .footer {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-content: center;
   height: 13vh;
   background-color: rgb(229,171,128);
@@ -68,19 +68,12 @@
 }
 
 .footer-logos {
-  margin-left: 15vw;
   margin-top: 2vh;
 }
 
 .footer-logos i {
   text-align: center;
   padding: 5%;
-}
-
-.footer h4 {
-  margin-top: 0vh;
-  padding-left: 9vw;
-  margin-top: 3vh;
 }
 
 .loading-container {
