@@ -62,6 +62,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-wrap: nowrap;
   height: 13vh;
   background-color: rgb(229,171,128);
   border-top: 3px solid rosybrown;
