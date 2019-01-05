@@ -67,9 +67,9 @@
   border-top: 3px solid rosybrown;
 }
 
-/* .footer-logos {
-
-} */
+.footer-logos {
+font-size: 1.25em;
+}
 
 .footer-logos i {
   text-align: center;
