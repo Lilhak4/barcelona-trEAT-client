@@ -42,9 +42,9 @@
   <footer>
     <div *ngIf="!restaurants" class="footer">
       <div class="footer-logos">
-        <i class="fab fa-twitter"></i>
-        <i class="fab fa-instagram"></i>
-        <i class="fab fa-facebook"></i>
+        <a href="https://twitter.com/kalg04"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/lilhak4/?hl=en"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/Lilhak4"><i class="fab fa-facebook"></i></a>
         <i class="fab fa-reddit"></i>
       </div>
       <h4>Kahlil Gersbach: https://github.com/Lilhak4</h4>
@@ -54,6 +54,7 @@
 
   <div *ngIf="restaurants" class="card-container">
     <div class="card">
+      <a href="/"></a>
       <ul>
         <li *ngFor="let restaurant of restaurants ">
           <img src="{{restaurant.image_url}}" alt="{{restaurant.alias}}">
@@ -65,7 +66,7 @@
             <b>Price:</b> {{restaurant.price}}</p>
           <p>
             <b>Rating (0-5):</b> {{restaurant.rating}}</p>
-          <a (click)="handleFavoriteClick(restaurant.name)">favorites</a>
+          <a (click)="handleFavoriteClick(restaurant.name)" href="#">favorites</a>
           <!-- (click)="goToPage('master') as an a element to redirect to profile favorites page -->
           <hr>
         </li>
