@@ -53,6 +53,10 @@ body {
   margin-left: -38vw;
 }
 
+.collapsible-menu input{
+  display: none;
+}
+
 .title {
   margin-left: 7vw;
   
