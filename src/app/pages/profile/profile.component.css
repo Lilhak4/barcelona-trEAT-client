@@ -1,4 +1,4 @@
-.container {
+.wrapper {
   height: 91vh;
   background-color: aquamarine;
   margin-top: 0vh;
@@ -9,7 +9,6 @@
 
 .profile-container {
   background-color: rgba(229,171,128,0.85);
-  height: 63vh;
   margin-top: 18%;
   position: absolute;
   width: 100%;

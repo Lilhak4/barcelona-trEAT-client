@@ -125,6 +125,14 @@ body.pg-loaded > .inner {
     opacity: 1;
   }
 }
+
+.lds-css {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  height: 100vh;
+  background: antiquewhite;
+}
 .lds-pacman {
   position: relative;
 }
