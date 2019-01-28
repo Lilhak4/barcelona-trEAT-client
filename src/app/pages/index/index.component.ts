@@ -41,8 +41,8 @@ export class IndexComponent implements OnInit {
     this.authService.addFavorite(name);
   }
 
-  // goToPage(profile: string) {
-  //   this.router.navigate([`${profile}`]);
-  // }
+  goToPage(profile: string) {
+    this.router.navigate([`${profile}`]);
+  }
 
 }

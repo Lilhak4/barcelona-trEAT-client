@@ -25,19 +25,17 @@ body {
 }
 
 .container-form {
-  height: 77vh;
+  height: 80vh;
   display: flex;
   justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .container-two {
   background-color:rgb(229,171,128);
-  border-bottom: 0.5px solid white;
   text-align: center;
   padding: 5vh
-}
-.container-two-text {
-  padding-top: 2vh;
 }
 
 .container-two-text h1 {
@@ -49,15 +47,17 @@ body {
 }
 
 .container-three {
-  border-bottom: 0.5px solid white;
+  height: 64.8%;
 }
 
 .container-three img {
   width: 100%;
-  height: 45vh;
+  height: 52vh;
 }
 
 .container-four {
+  display: center;
+  justify-content: center;
   height: 58vh;
   background-color: #000000;
   color: #e1c5ac;
@@ -156,9 +156,6 @@ hr {
 }
 
 /* ---- Forms ----*/
-.search-form {
-  margin-top: 10vh;
-}
 
 .search-location-bar {
     padding: 14px 23px;
@@ -190,5 +187,4 @@ hr {
   border:2px solid rgb(132,69,21);
   background-color:rgb(45,23,7);
   color:#fafafa;
-  display: block;
 }
