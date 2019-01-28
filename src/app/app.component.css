@@ -40,7 +40,6 @@ body {
   color: black;
 }
 .collapsible-menu label {
-    font-size: 56px;
     display: block;
     cursor: pointer;
     padding: 10px 0 10px 40%;
@@ -53,7 +52,7 @@ body {
   margin-left: -38vw;
 }
 
-.collapsible-menu input{
+#menu {
   display: none;
 }
 

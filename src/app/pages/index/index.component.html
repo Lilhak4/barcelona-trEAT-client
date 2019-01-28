@@ -1,75 +1,77 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
   crossorigin="anonymous">
 
-<div class="container">
-  <div *ngIf="!restaurants" class="container-form">
-    <form class="search-form">
-      <input class="search-location-bar" type="text" placeholder="Location" required #searchLocationInput>
-      <input class="search-bar" type="text" placeholder="Dessert" required #searchInput>
-      <button (click)="handleSearch(searchInput.value, searchLocationInput.value)" class="search-button" type="submit">Search</button>
-    </form>
-  </div>
-
-  <div *ngIf="loading" class="loading-container">
-    <div>
-      <i>Treat Yourself</i>
+<div class="wrapper">
+  <div class="container">
+    <div *ngIf="!restaurants" class="container-form">
+      <form class="search-form">
+        <input class="search-location-bar" type="text" placeholder="Location" required #searchLocationInput>
+        <input class="search-bar" type="text" placeholder="Dessert" required #searchInput>
+        <button (click)="handleSearch(searchInput.value, searchLocationInput.value)" class="search-button" type="submit">Search</button>
+      </form>
     </div>
-  </div>
 
-  <div *ngIf="!restaurants" class="container-two">
-    <div class="container-two-text">
-      <h1>The dessert finder app that you always wanted</h1>
-      <div class="container-two-picture">
-        <img src="https://cdn1.iconfinder.com/data/icons/confectionery/96/16-512.png">
+    <div *ngIf="loading" class="loading-container">
+      <div>
+        <i>Treat Yourself</i>
       </div>
     </div>
-  </div>
 
-  <div *ngIf="!restaurants" class="container-three-picture">
-    <img src="https://images.unsplash.com/photo-1517417196127-9ad11f8a8dd3?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7facb17970400506aa1924001f3efe55&auto=format&fit=crop&w=1050&q=80">
-  </div>
-
-  <div *ngIf="!restaurants" class="container-four">
-    <div class="container-four-picture">
-      <img src="https://images.unsplash.com/photo-1498604132755-751b73a22ec9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2f450923b04de01807b018f8ed4c32d5&auto=format&fit=crop&w=1026&q=80">
-    </div>
-    <div class="container-four-text">
-      <h2>"I needed a tres leches fix fast, and the trEAT app helped me avoid withdrawals!"</h2>
-      <p>-Manolo Mamaknullere</p>
-    </div>
-  </div>
-
-  <footer>
-    <div *ngIf="!restaurants" class="footer">
-      <div class="footer-logos">
-        <a href="https://https://twitter.com/bachtoreality"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.instagram.com/mellowdrizzle/?hl=en"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.facebook.com/Lilhak4"><i class="fab fa-facebook"></i></a>
-        <a href="https://github.com/Lilhak4"><i class="fab fa-github"></i></a>
+    <div *ngIf="!restaurants" class="container-two">
+      <div class="container-two-text">
+        <h1>The dessert finder app that you always wanted</h1>
+        <div class="container-two-picture">
+          <img src="https://cdn1.iconfinder.com/data/icons/confectionery/96/16-512.png">
+        </div>
       </div>
     </div>
-  </footer>
+
+    <div *ngIf="!restaurants" class="container-three">
+      <img src="https://images.unsplash.com/photo-1517417196127-9ad11f8a8dd3?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7facb17970400506aa1924001f3efe55&auto=format&fit=crop&w=1050&q=80">
+    </div>
+
+    <div *ngIf="!restaurants" class="container-four">
+      <div class="container-four-picture">
+        <img src="https://images.unsplash.com/photo-1498604132755-751b73a22ec9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2f450923b04de01807b018f8ed4c32d5&auto=format&fit=crop&w=1026&q=80">
+      </div>
+      <div class="container-four-text">
+        <h2>"I needed a tres leches fix fast, and the trEAT app helped me avoid withdrawals!"</h2>
+        <p>-Manolo Mamaknullere</p>
+      </div>
+    </div>
+
+    <footer>
+      <div *ngIf="!restaurants" class="footer">
+        <div class="footer-logos">
+          <a href="https://github.com/Lilhak4"><i class="fab fa-github"></i></a>
+          <a href="https://www.instagram.com/mellowdrizzle/?hl=en"><i class="fab fa-instagram"></i></a>
+          <a href="https://twitter.com/bachtoreality"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.facebook.com/Lilhak4"><i class="fab fa-facebook"></i></a>
+        </div>
+      </div>
+    </footer>
 
 
-  <div *ngIf="restaurants" class="card-container">
-    <div class="card">
-      <a href="/">Back to Search</a>
-      <ul>
-        <li *ngFor="let restaurant of restaurants ">
-          <img src="{{restaurant.image_url}}" alt="{{restaurant.alias}}">
-          <p>
-            <b>Name:</b> {{restaurant.name}}</p>
-          <p>
-            <b>Address:</b> {{restaurant.location.address1}}</p>
-          <p>
-            <b>Price:</b> {{restaurant.price}}</p>
-          <p>
-            <b>Rating (0-5):</b> {{restaurant.rating}}</p>
-          <a (click)="handleFavoriteClick(restaurant.name)" href="/profile">favorites</a>
-          <!-- (click)="goToPage('master') as an a element to redirect to profile favorites page -->
-          <hr>
-        </li>
-      </ul>
+    <div *ngIf="restaurants" class="card-container">
+      <div class="card">
+        <a href="/">Back to Search</a>
+        <ul>
+          <li *ngFor="let restaurant of restaurants ">
+            <img src="{{restaurant.image_url}}" alt="{{restaurant.alias}}">
+            <p>
+              <b>Name:</b> {{restaurant.name}}</p>
+            <p>
+              <b>Address:</b> {{restaurant.location.address1}}</p>
+            <p>
+              <b>Price:</b> {{restaurant.price}}</p>
+            <p>
+              <b>Rating (0-5):</b> {{restaurant.rating}}</p>
+            <a (click)="handleFavoriteClick(restaurant.name)" href="/profile">favorites</a>
+            <!-- (click)="goToPage('master') as an a element to redirect to profile favorites page -->
+            <hr>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </div>
