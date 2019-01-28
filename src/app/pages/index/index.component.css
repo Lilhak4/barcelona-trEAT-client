@@ -63,6 +63,7 @@ body {
   color: #e1c5ac;
   margin-top: -0.7vh;
   text-align: center;
+  border-bottom: 3px solid rosybrown;
 }
 
 .container-four-picture img {
@@ -81,10 +82,8 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  flex-wrap: nowrap;
   height: 13vh;
   background-color: rgb(229,171,128);
-  border-top: 3px solid rosybrown;
 }
 
 .footer-logos {
