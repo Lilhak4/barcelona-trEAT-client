@@ -27,7 +27,7 @@
   
   **File Upload:** As a user I want to be able to upload a photo for my profile page
   
-  **Favorites:** As a user I can add a restaurant to my favorites that will be listed on my profile
+  ~~**Favorites:** As a user I can add a restaurant to my favorites that will be listed on my profile~~
 
   **Google Maps:** As a user I want to see a map so that I can choose a restaurant nearby
   
