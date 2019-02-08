@@ -64,8 +64,6 @@ body {
   }
 }
 
-
-
 @media (min-width: 1025px) {
   .container-two-picture img {
     width: 40%;
@@ -78,7 +76,7 @@ body {
 
 .container-three img {
   width: 100%;
-  height: 52vh;
+  height: 53vh;
 }
 
 @media (min-width:1025px) {
@@ -90,22 +88,28 @@ body {
 .container-four {
   display: center;
   justify-content: center;
-  height: 55vh;
+  height: 61vh;
   background-color: #000000;
   color: #e1c5ac;
   text-align: center;
   border-bottom: 3px solid rosybrown;
 }
 
+@media (min-width: 837px) {
+  .container-four {
+    height: 50vh;
+  }
+} 
+
 @media (min-width: 1024px) {
   .container-four {
-    height: 60vh;
-    margin-top: 14vh;
+    height: 65vh;
+    margin-top: -5vh;
   }
 }
 
 .container-four-picture img {
-  width: 50%;
+  width: 80%;
   height: 25vh;
   margin-top: 8vh;
 }
@@ -114,6 +118,7 @@ body {
   .container-four-picture img {
     width: 71%;
     height: 39vh;
+    margin-top: 11vh;
   }
 }
 
