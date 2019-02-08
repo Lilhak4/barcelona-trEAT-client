@@ -87,8 +87,9 @@ body {
 }
 
 .footer-logos {
-font-size: 1.75em;
-width: 55vw;
+  font-size: 1.75em;
+  width: 55vw;
+  text-align: center;
 }
 
 .footer-logos i {
