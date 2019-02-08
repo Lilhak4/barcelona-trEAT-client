@@ -64,11 +64,7 @@ body {
   }
 }
 
-@media (max-width: 1024px) {
-  .container-two-picture img {
-    width: 40%;
-  }
-}
+
 
 @media (min-width: 1025px) {
   .container-two-picture img {
@@ -87,7 +83,7 @@ body {
 
 @media (min-width:1025px) {
   .container-three-img {
-    height: 70vh;
+    height: 66.5vh;
   }
 }
 
